@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 0;
 }
 
 .contact-title{
@@ -26,13 +26,15 @@
 
 .contact-section{
     display: flex;
-    gap: 150px;
+    
 }
 
 .contact-left{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 .contact-left h1{
@@ -70,6 +72,7 @@
     flex-direction: column;
     align-items: start;
     gap: 30px;
+    margin-right: 10vw;
 }
 
 .contact-right label{
@@ -80,8 +83,8 @@
 
 .contact-right input{
     border: none;
-    width: 700px;
-    height: 78px;
+    width: 40vw;
+    height: 8vh;
     padding-left: 20px;
     border-radius: 4px;
     background: #323232;
@@ -92,8 +95,9 @@
 
 .contact-right textarea{
     border: none;
-    width: 650px;
-    padding: 25px;
+    width: 40vw;
+    padding-left: 25px;
+    padding-top: 25px;
     border-radius: 4px;
     background: #323232;
     color: #a0a0a0;
@@ -104,6 +108,7 @@
 .contact-submit{
     border: none;
     color: white;
+    width: 300px;
     border-radius: 50px;
     background: linear-gradient(264deg,#ff006f, #00fffb);
     font-size: 22px;

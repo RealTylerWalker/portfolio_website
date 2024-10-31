@@ -32,8 +32,8 @@
 
 .myWork-container img{
     box-sizing: border-box;
-    width: 419px;
-    height: 280px;
+    width: 23vw;
+    
     transition: 0.3s;
     cursor: pointer;
 }

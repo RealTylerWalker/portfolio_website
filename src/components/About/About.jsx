@@ -23,20 +23,24 @@ const About = () => {
                             I’ve gained experience in troubleshooting, process improvement, and managing digital projects, along with hands-on technical expertise in JavaScript and React.</p>
                         <p>I’m looking for opportunities where I can leverage my skills to provide technical solutions and ensure customer success in a collaborative, growth-oriented environment.</p>
                     </div>
-                    <div className="about-skills">
-                        <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "65%" }} /></div>
-                        <div className="about-skill"><p>React JS</p><hr style={{ width: "70%" }} /></div>
-                        <div className="about-skill"><p>JavaScript</p><hr style={{ width: "60%" }} /></div>
-                        <div className="about-skill"><p>Git</p><hr style={{ width: "75%" }} /></div>
-                        <div className="about-skill"><p>Mongoose/MongoDB</p><hr style={{ width: "63%" }} /></div>
-                        <div className="about-skill"><p>Photoshop</p><hr style={{ width: "75%" }} /></div>
-                        <div className="about-skill"><p>Illustrator</p><hr style={{ width: "80%" }} /></div>
-                        <div className="about-skill"><p>Premiere Pro</p><hr style={{ width: "70%" }} /></div>
-                        <div className="about-skill"><p>After Effects</p><hr style={{ width: "60%" }} /></div>
 
-                    </div>
                 </div>
+
             </div>
+
+            <div className="about-skills">
+                <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "65%" }} /></div>
+                <div className="about-skill"><p>React JS</p><hr style={{ width: "70%" }} /></div>
+                <div className="about-skill"><p>JavaScript</p><hr style={{ width: "60%" }} /></div>
+                <div className="about-skill"><p>Git</p><hr style={{ width: "75%" }} /></div>
+                <div className="about-skill"><p>Mongoose/MongoDB</p><hr style={{ width: "63%" }} /></div>
+                <div className="about-skill"><p>Photoshop</p><hr style={{ width: "75%" }} /></div>
+                <div className="about-skill"><p>Illustrator</p><hr style={{ width: "80%" }} /></div>
+                <div className="about-skill"><p>Premiere Pro</p><hr style={{ width: "70%" }} /></div>
+                <div className="about-skill"><p>After Effects</p><hr style={{ width: "60%" }} /></div>
+
+            </div>
+
             <div className="about-achievments">
                 <div className="about-achievment">
                     <h1>10+</h1>

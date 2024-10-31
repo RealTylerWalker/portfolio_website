@@ -20,12 +20,14 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <div className="footer-bootom">
-                <p className="footer-bottom-left">© 2024 Tyler Walker. All rights reserved.</p>
+            <div className="footer-bottom">
+                <div className="footer-bottom-left">
+                    <span>© 2024 Tyler Walker. All rights reserved.</span>
+                </div>
                 <div className="footer-bottom-right">
-                    <p>Term of Services</p>
-                    <p>Privacy Policy</p>
-                    <p>Connect with me</p>
+                    <span>Term of Services</span>
+                    <span>Privacy Policy</span>
+                    <span>Connect with me</span>
                 </div>
             </div>
         </div>

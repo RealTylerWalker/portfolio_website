@@ -6,11 +6,9 @@ import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 
 const Contact = () => {
-    const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        setResult("Sending....");
         const formData = new FormData(event.target);
 
         formData.append("access_key", "30b07070-49ad-46fe-8c23-e6ea0f5c83f2");

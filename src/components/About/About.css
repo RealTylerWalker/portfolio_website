@@ -50,33 +50,32 @@
 
 .about-skills{
     display: flex;
+    width: 70vh;
     flex-direction: column;
     gap: 20px;
 }
 
 .about-skill{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     transition: 0.3s;
 }
 
 .about-skill p{
-    min-width: 15px;
-    margin-right: 200px;
+    min-width: 140px;
+    
     font-size: 24px;
     font-weight: 500;
+    
 }
 
 .about-skill hr{
     outline: none;
     border: none;
-    
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(264deg, #ff006f, #00fffb);
-    margin-left: 0; 
-    margin-right: auto;
 }
 
 .about-achievments{

@@ -1,16 +1,43 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import menu_open from '../../assets/menu_open.svg'
+import menu_close from '../../assets/menu_close.svg'
 
 const Navbar = () => {
 
     const [menu, setMenu] = useState("home");
+    const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
+
+
     return (
         <div className='navbar'>
             <img src={logo} className="navbar-logo" alt="" />
-            <ul className='nav-menu'>
+
+            {isMobile && (
+                <div className="menu-icon" onClick={toggleMenu}>
+                    {isOpen ? <FaTimes /> : <FaBars />}
+                </div>
+            )}
+
+            <ul className={`nav-menu ${isMobile ? (isOpen ? 'active' : '') : ''}`}>
                 <li><AnchorLink
                     className='anchor-link' href='#home'><p onClick={() => setMenu("home")}>Home</p></AnchorLink>{menu === "home" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink
@@ -22,8 +49,13 @@ const Navbar = () => {
                 <li><AnchorLink
                     className='anchor-link' offset={50} href='#contact'><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink>{menu === "contact" ? <img src={underline} alt='' /> : <></>}</li>
             </ul>
-            <div className="nav-connect"><AnchorLink
-                className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+            {!isMobile && (
+                <div className="nav-connect">
+                    <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                        Connect With Me
+                    </AnchorLink>
+                </div>
+            )}
         </div>
     )
 }

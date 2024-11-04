@@ -36,21 +36,21 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-    flex: 1; /* Allow it to grow and fill available space */
-   
+    flex: 1; 
+    
 }
 
 .about-para{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 500;
 }
 
 .about-skills{
     display: flex;
-    width: 70vh;
+    width: 70vw;
     flex-direction: column;
     gap: 20px;
 }
@@ -64,7 +64,6 @@
 
 .about-skill p{
     min-width: 140px;
-    
     font-size: 24px;
     font-weight: 500;
     
@@ -73,7 +72,7 @@
 .about-skill hr{
     outline: none;
     border: none;
-    height: 8px;
+    height: 7px;
     border-radius: 50px;
     background: linear-gradient(264deg, #ff006f, #00fffb);
 }

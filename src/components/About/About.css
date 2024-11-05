@@ -115,3 +115,109 @@
     transform: scale(1.12);
     transition: 0.5s;
 }
+
+@media(max-width: 768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        line-height: 32px;
+        font-size: 16px;
+    }
+    
+    .about-skills{
+        display: flex;
+        width: 44vw;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-skill{
+        display: flex;
+        gap: 5vw;
+        align-items: center;
+        transition: .3s;
+    }
+    .about-skill p{
+        font-size: 16px;
+        min-width: 20vw;
+    }
+    .about-skill h1{
+        min-width: 26vw;
+    }
+
+    /* .about-skills{
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .about-skill{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        transition: 0.3s;
+    }
+    
+    .about-skill p{
+        min-width: 140px;
+        font-size: 24px;
+        font-weight: 500;
+        
+    } */
+    .about-achievments{
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    .about-achievment{
+        gap: 10px;
+    }
+    .about-achievment h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .about-achievment p{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+}
+@media(max-width: 1141px){
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        line-height: 32px;
+    }
+    .about-title h1{
+        font-size: 60px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: center;
+    }
+}

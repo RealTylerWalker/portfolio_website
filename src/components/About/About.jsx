@@ -1,13 +1,25 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import about_profile from '../../assets/about_profile.png'
 
 const About = () => {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div id="about" className='about'>
             <div className="about-title">
-                <h1>About me</h1>
+                <h1>About</h1>
                 <img src={theme_pattern} alt="" />
             </div>
             <div className="about-sections">
@@ -28,19 +40,35 @@ const About = () => {
 
             </div>
 
-            <div className="about-skills">
-                <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "65%" }} /></div>
-                <div className="about-skill"><p>React JS</p><hr style={{ width: "70%" }} /></div>
-                <div className="about-skill"><p>JavaScript</p><hr style={{ width: "60%" }} /></div>
-                <div className="about-skill"><p>Git</p><hr style={{ width: "75%" }} /></div>
-                <div className="about-skill"><p>Mongoose</p><hr style={{ width: "63%" }} /></div>
-                <div className="about-skill"><p>MongoDB</p><hr style={{ width: "69%" }} /></div>
-                <div className="about-skill"><p>Photoshop</p><hr style={{ width: "75%" }} /></div>
-                <div className="about-skill"><p>Illustrator</p><hr style={{ width: "80%" }} /></div>
-                <div className="about-skill"><p>Premiere Pro</p><hr style={{ width: "70%" }} /></div>
-                <div className="about-skill"><p>After Effects</p><hr style={{ width: "60%" }} /></div>
+            {isMobile ? (
+                <div className="about-skills">
+                    <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "35%" }} /></div>
+                    <div className="about-skill"><p>React JS</p><hr style={{ width: "40%" }} /></div>
+                    <div className="about-skill"><p>JavaScript</p><hr style={{ width: "30%" }} /></div>
+                    <div className="about-skill"><p>Git</p><hr style={{ width: "45%" }} /></div>
+                    <div className="about-skill"><p>Mongoose</p><hr style={{ width: "33%" }} /></div>
+                    <div className="about-skill"><p>MongoDB</p><hr style={{ width: "39%" }} /></div>
+                    <div className="about-skill"><p>Photoshop</p><hr style={{ width: "45%" }} /></div>
+                    <div className="about-skill"><p>Illustrator</p><hr style={{ width: "50%" }} /></div>
+                    <div className="about-skill"><p>Premiere Pro</p><hr style={{ width: "40%" }} /></div>
+                    <div className="about-skill"><p>After Effects</p><hr style={{ width: "30%" }} /></div>
+                </div>
 
-            </div>
+            ) : (
+                <div className="about-skills">
+                    <div className="about-skill"><p>HTML & CSS</p><hr style={{ width: "65%" }} /></div>
+                    <div className="about-skill"><p>React JS</p><hr style={{ width: "70%" }} /></div>
+                    <div className="about-skill"><p>JavaScript</p><hr style={{ width: "60%" }} /></div>
+                    <div className="about-skill"><p>Git</p><hr style={{ width: "75%" }} /></div>
+                    <div className="about-skill"><p>Mongoose</p><hr style={{ width: "63%" }} /></div>
+                    <div className="about-skill"><p>MongoDB</p><hr style={{ width: "69%" }} /></div>
+                    <div className="about-skill"><p>Photoshop</p><hr style={{ width: "75%" }} /></div>
+                    <div className="about-skill"><p>Illustrator</p><hr style={{ width: "80%" }} /></div>
+                    <div className="about-skill"><p>Premiere Pro</p><hr style={{ width: "70%" }} /></div>
+                    <div className="about-skill"><p>After Effects</p><hr style={{ width: "60%" }} /></div>
+                </div>
+            )}
+
 
             <div className="about-achievments">
                 <div className="about-achievment">

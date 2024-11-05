@@ -90,10 +90,25 @@
 
     .nav-menu.active {
         top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, #ff006ff2, #00fffbef);
+        margin: 0;
     }
 
     .nav-connect {
         display: none;
+    }
+
+    .nav-menu li{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .nav-menu li img{
+        width: 4vw;
     }
 }
 

@@ -1,0 +1,22 @@
+.back-button-container{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 2vw;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.back-button-container:hover{
+    transform: scale(1.10);
+    border: 2px solid #ff006f;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-button-container img{
+transform: scaleX(-1);
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import profile_img from '../../assets/profile_img.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -12,7 +13,7 @@ const Hero = () => {
             <div className="hero-action">
                 <div className="hero-connect"><AnchorLink
                     className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-                <div className="hero-resume">My resume</div>
+                <Link to="/resume" className="hero-resume">My resume</Link>
             </div>
 
         </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
 
             {isMobile && (
                 <div className="menu-icon" onClick={toggleMenu}>
-                    {isOpen ? <FaTimes /> : <FaBars />}
+                    {isOpen ? <FaTimes /> : <img src={menu_open} className="menu-open" alt="" />}
                 </div>
             )}
 

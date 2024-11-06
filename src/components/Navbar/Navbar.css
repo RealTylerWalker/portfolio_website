@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.menu-open{
+   
+}
+
 .nav-menu{
     display: flex;
     align-items: center;
@@ -61,14 +65,20 @@
 
 
 @media (max-width: 768px) {
+    .navbar-logo{
+        width: 175px;
+        
+        margin-left: 3.5vw;
+        margin-top: 1vh;
+    }
     .navbar {
         margin: 20px;
     }
 
     .menu-icon {
         display: block;
-        top: 20px;
-        right: 20px;
+        top: 32px;
+        right: 35px;
         position: fixed;
         font-size: 1.5rem;
         cursor: pointer;

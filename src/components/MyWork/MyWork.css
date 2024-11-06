@@ -65,7 +65,10 @@
 @media(max-width:768px){
     .myWork{
         gap: 50px;
-        margin: 50px 70px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         align-items: center;
     }
     .myWork-title h1{
